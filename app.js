@@ -18,17 +18,17 @@
         const strArr = str.replace(/\s/g, '').split('');
         let brackets = [];
 
-        for(let i = 0; i < strArr.length; i++) {
-            if (Object.values(map).includes(strArr[i])) {
-                brackets.push(strArr[i]);
-            } else if (Object.keys(map).includes(strArr[i])) {
-                if (brackets.length && map[strArr[i]] !== brackets[brackets.length - 1]){
+        strArr.forEach((char) => {
+            if (Object.values(map).includes(char)) {
+                brackets.push(char);
+            } else if (Object.keys(map).includes(char)) {
+                if (brackets.length && map[char] !== brackets[brackets.length - 1]){
                     return false;
                 }
-
+    
                 brackets.pop();
             }
-        }
+        })
 
         return !brackets.length;
     }
