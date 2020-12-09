@@ -3,6 +3,8 @@
     1
     2
     3
+    4
+    5
     function isCorrectNested(str) {
         if (typeof str !== 'string') {
             return;
