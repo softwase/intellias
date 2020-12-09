@@ -1,5 +1,6 @@
 'use strict'
 {
+    1
     function isCorrectNested(str) {
         if (typeof str !== 'string') {
             return;
