@@ -2,6 +2,7 @@
 {
     1
     2
+    3
     function isCorrectNested(str) {
         if (typeof str !== 'string') {
             return;
